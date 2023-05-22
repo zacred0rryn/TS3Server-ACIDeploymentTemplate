@@ -55,31 +55,33 @@
                             "ports": [
                                 {
                                     "protocol": "UDP",
-                                    "port": 9987
+                                    "port": 9987 // Voice, required
+                                },
+                                /*
+                                {
+                                    "protocol": "TCP",
+                                    "port": 10011 // ServerQuery (raw), optional
                                 },
                                 {
                                     "protocol": "TCP",
-                                    "port": 10011
+                                    "port": 10022 // ServerQuery (SSH), optional
                                 },
                                 {
                                     "protocol": "TCP",
-                                    "port": 10022
+                                    "port": 10080 // WebQuery (http), optional
                                 },
                                 {
                                     "protocol": "TCP",
-                                    "port": 10080
+                                    "port": 10443 // WebQuery (https), optional
+                                },
+                                */
+                                {
+                                    "protocol": "TCP",
+                                    "port": 30033 // Filetransfer, required
                                 },
                                 {
                                     "protocol": "TCP",
-                                    "port": 10443
-                                },
-                                {
-                                    "protocol": "TCP",
-                                    "port": 30033
-                                },
-                                {
-                                    "protocol": "TCP",
-                                    "port": 41144
+                                    "port": 41144 // TSDNS, optional
                                 }
                             ],
                             "environmentVariables": [
@@ -110,6 +112,7 @@
                             "protocol": "UDP",
                             "port": 9987
                         },
+                        /*
                         {
                             "protocol": "TCP",
                             "port": 10011
@@ -126,6 +129,7 @@
                             "protocol": "TCP",
                             "port": 10443
                         },
+                        */
                         {
                             "protocol": "TCP",
                             "port": 30033
